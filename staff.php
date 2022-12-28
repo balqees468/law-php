@@ -1,554 +1,626 @@
+<?php
 
+?>
 <html>
-<style>
-.topnav {
-  
-  background-color: #ffffb3; /gold/
-   width: 150px;
-  height: 30px;
-  padding: 15px;
- box-shadow: 10px 10px 5px #ffffcc;
-
- 
+  <style>
+    .topnav {
+    background-color: #ffffb3;
+    width: 100%;
+    height: 30px;
+    padding: 15px;
+    box-shadow: 10px 10px 5px #ffffcc;
 }
 
-.topnav  a {
-  display: block;
-  float: right;
-  color: #250033; /*نهدي*/
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size:18px;
+.topnav a {
+    display: block;
+    float: right;
+    color: #250033;
+    /*نهدي*/
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 18px;
 }
-.topnav  a:hover:not(.active) {background-color: white;}
-.mySlides {display: none; margin-right:200px; margin-top:15px}
-img {vertical-align: middle;}
+
+.topnav a:hover:not(.active) {
+    background-color: white;
+}
+
+.mySlides {
+    display: none;
+    margin-right: 200px;
+    margin-top: 15px;
+}
+
+img {
+    vertical-align: middle;
+}
 
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  text-align:center;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    text-align: center;
 }
 
-
-}
 .active {
-  background-color: #717171;
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
+
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}.topnav {
-  
-  background-color: #ffffb3; /gold/
-   width: 150px;
-  height: 30px;
-  padding: 15px;
- box-shadow: 10px 10px 5px #ffffcc;
-
- 
+    .text {
+        font-size: 11px;
+    }
 }
 
-.topnav  a {
-  display: block;
-  float: right;
-  color: #250033; /*نهدي*/
-  text-align: center;
-  padding: 1px 10px;
-  text-decoration: none;
-  font-size:18px;
+.topnav {
+    background-color: #ffffb3;
+
+    height: 30px;
+    padding: 15px;
+    box-shadow: 10px 10px 5px #ffffcc;
 }
-.topnav  a:hover:not(.active) {background-color: white;}
-.mySlides {display: none; margin-right:200px; margin-top:15px}
-img {vertical-align: middle;}
+
+.topnav a {
+    display: block;
+    float: right;
+    color: #250033;
+    /*نهدي*/
+    text-align: center;
+    padding: 1px 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.topnav a:hover:not(.active) {
+    background-color: white;
+}
+
+.mySlides {
+    display: none;
+    margin-right: 200px;
+    margin-top: 15px;
+}
+
+img {
+    vertical-align: middle;
+}
 
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  text-align:center;
-}
-
-
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    text-align: center;
 }
 
 .active {
-  background-color: #717171;
+    background-color: #717171;
 }
-
 
 .slideshow-container {
-  max-width: 1000px;
-  position: block;
-  margin: auto;
-  text-align:center;
+    max-width: 1000px;
+    position: block;
+    margin: auto;
+    text-align: center;
 }
 
-
-}
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
-
-
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 .desc {
-  padding: 15px;
-  text-align: center;  
-  
+    padding: 15px;
+    text-align: center;
 }
- 
- .button { background-color: #290033;
-  display: block;
-  border: none;
-  padding: 20px;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 28px;
-  margin: 10px 10px;
-  cursor: pointer;
-  font-family: DecoType Naskh Variants;
-  margin-left:100px;
 
+.button {
+    background-color: #290033;
+    display: block;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: 10px 10px;
+    cursor: pointer;
+    font-family: DecoType Naskh Variants;
+    margin-left: 100px;
 }
-.button1 {border-radius: 10%;}
-.button2 {border-radius: 10%;}
-.button3 {border-radius: 10%;}
+
+.button1 {
+    border-radius: 10%;
+}
+
+.button2 {
+    border-radius: 10%;
+}
+
+.button3 {
+    border-radius: 10%;
+}
+
 .vertical-center {
-  margin: 0;
-  margin-left: 1000px;
-  color: #F0E169;
-  position: absolute;
-  top: 70%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+    margin: 0;
+    margin-left: 1000px;
+    color: #f0e169;
+    position: absolute;
+    top: 70%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-.vertical-center a{
-  color: #F0E169;
-  font-decoration: none;
 
+.vertical-center a {
+    color: #f0e169;
+    font-decoration: none;
 }
+
 .dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980b9;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;} 
-
-
-
-:root{
-  --font1:'Nova Round', cursive;
-  --font2: 'Margarine', cursive;
-  --color1: rgb(37, 0, 51);
-  --weekHeaderBGColor:rgb(37, 0, 51);
-  --todayTextColor:rgba(234,43,187);
-  --dayActiveColor:rgba(68, 91, 222,0.9);
-  --dayHoverColor:rgba(222, 216, 68,0.3);
-  --borderColor:rgba(0,0,0,0.1);
-  --fullDayHeight:6rem;
-  --transitionTime:300ms;
+.dropdown a:hover {
+    background-color: #ddd;
 }
 
-.calendar-wrapper{
-  height:calc(var(--fullDayHeight)*7);
-  width:70em;
-  box-sizing:content-box;
-  display:flex;
-  position:relative;
-  justify-content: center;
-  overflow:hidden;
-  9
+.show {
+    display: block;
 }
 
-.calendar{
-  position:absolute;
-  transform:initial;
-  font-family:var(--font2);
-  display: inline-grid;
-  grid-template:
-      "M M M M M M M"
-      "W W W W W W W"
-      "Days Days Days Days Days Days Days"
+:root {
+    --font1: 'Nova Round', cursive;
+    --font2: 'Margarine', cursive;
+    --color1: rgb(37, 0, 51);
+    --weekHeaderBGColor: rgb(37, 0, 51);
+    --todayTextColor: rgba(234, 43, 187);
+    --dayActiveColor: rgba(68, 91, 222, 0.9);
+    --dayHoverColor: rgba(222, 216, 68, 0.3);
+    --borderColor: rgba(0, 0, 0, 0.1);
+    --fullDayHeight: 6rem;
+    --transitionTime: 300ms;
 }
+
+.calendar-wrapper {
+    height: calc(var(--fullDayHeight) * 7);
+    width: 70em;
+    box-sizing: content-box;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.calendar {
+    position: absolute;
+    transform: initial;
+    font-family: var(--font2);
+    display: inline-grid;
+    grid-template:
+        'M M M M M M M'
+        'W W W W W W W'
+        'Days Days Days Days Days Days Days';
+}
+
 /*Headings*/
-.display.month{
-  font-size: 2rem;
-  margin: 0 auto;
+.display.month {
+    font-size: 2rem;
+    margin: 0 auto;
 }
 
-.display.week div{
-  padding:0 0.2em;
+.display.week div {
+    padding: 0 0.2em;
 }
 
-.display.week{
-  font-size:1.2em;
-  border-radius:6px 6px 0 0;
-  grid-area: W;
+.display.week {
+    font-size: 1.2em;
+    border-radius: 6px 6px 0 0;
+    grid-area: W;
 }
 
 /* Individual Units*/
 
-.calendar .header{
-  font-family:var(--font1);
-  text-align:center;
+.calendar .header {
+    font-family: var(--font1);
+    text-align: center;
 }
 
-.week{
-  display: grid;
-  justify-content:center;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
-  grid-template-columns: repeat(7, 1fr);
+.week {
+    display: grid;
+    justify-content: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+    grid-template-columns: repeat(7, 1fr);
 }
 
-.header.week{
-  background-color:var(--weekHeaderBGColor);
-  color:white;
-}
-.calendar .row{
-  display:flex;
-  flex-flow:row nowrap;
+.header.week {
+    background-color: var(--weekHeaderBGColor);
+    color: white;
 }
 
-.days{
-  width:100%;
-  grid-area: Days;
-  grid-auto-rows: var(--fullDayHeight);
+.calendar .row {
+    display: flex;
+    flex-flow: row nowrap;
 }
 
-.day{
-  cursor:pointer;
-  position:relative;
-  border-collapse:collapse;
-  border-top:1px solid var(--borderColor);
-  padding:2px;
+.days {
+    width: 100%;
+    grid-area: Days;
+    grid-auto-rows: var(--fullDayHeight);
 }
 
-.day.today{
-  color:var(--todayTextColor);
+.day {
+    cursor: pointer;
+    position: relative;
+    border-collapse: collapse;
+    border-top: 1px solid var(--borderColor);
+    padding: 2px;
 }
 
-.day.today:before{
-  content:"";
-  position:absolute;
-  background-color:var(--color1);
-  filter:hue-rotate(40deg);
-  height:5px;
-  width:5px;
-  border-radius:50%;
-  top:4px;
-  right:5px;
-  z-index:-1;
+.day.today {
+    color: var(--todayTextColor);
 }
 
+.day.today:before {
+    content: '';
+    position: absolute;
+    background-color: var(--color1);
+    filter: hue-rotate(40deg);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    top: 4px;
+    right: 5px;
+    z-index: -1;
+}
 
-.day:not(:nth-child(7n+0)){
-  border-right:1px solid var(--borderColor);
+.day:not(:nth-child(7n + 0)) {
+    border-right: 1px solid var(--borderColor);
 }
 
 .day.active {
-  color:white  !important;
-  background-color:var(--dayActiveColor)!important;
+    color: white !important;
+    background-color: var(--dayActiveColor) !important;
 }
 
-.blank.day{
-  background-color: rgba(30,30,30, 0.2);
-  color:hsl(240,20%,50%);
-  filter:grayscale(0.5);
-  opacity:0.4;
+.blank.day {
+    background-color: rgba(30, 30, 30, 0.2);
+    color: hsl(240, 20%, 50%);
+    filter: grayscale(0.5);
+    opacity: 0.4;
 }
-.day:hover, .day:active, .blank.day:hover, .blank.day:active{
-  background-color:var(--dayHoverColor);
+
+.day:hover,
+.day:active,
+.blank.day:hover,
+.blank.day:active {
+    background-color: var(--dayHoverColor);
 }
 
 /* mini class styling*/
-.mini .days{
-  grid-auto-rows: min-content;
+.mini .days {
+    grid-auto-rows: min-content;
 }
 
-.calendar-wrapper.mini{
-  width:20rem;
-  height:15rem;
+.calendar-wrapper.mini {
+    width: 20rem;
+    height: 15rem;
 }
 
-.mini .week{
-  grid-auto-columns: fit-content(0.5rem);
-  grid-auto-rows: fit-content(0.5rem);
+.mini .week {
+    grid-auto-columns: fit-content(0.5rem);
+    grid-auto-rows: fit-content(0.5rem);
 }
 
-.mini .day{
-  text-align:center;
-  font-size:1.2rem;
-  padding:0;
+.mini .day {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
 }
+
 /*UI Components*/
 
-.calendar .mainheader{
-  grid-area: M;
-  display:flex;
-  flex-flow:row nowrap;
-  justify-content: center;
-  text-transform:uppercase;
+.calendar .mainheader {
+    grid-area: M;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
-.calendar .arrow{
-  transform:scale(1.2);
-  border-radius:50%;
-  background-color:var(--color1);
-  height:1em;
-  width:1em;
-  color:white;
-  line-height:0.8em;
-  text-align:center;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  cursor:pointer;
-  margin:0.5em;
+.calendar .arrow {
+    transform: scale(1.2);
+    border-radius: 50%;
+    background-color: var(--color1);
+    height: 1em;
+    width: 1em;
+    color: white;
+    line-height: 0.8em;
+    text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    margin: 0.5em;
 }
 
-.calendar .arrow.left:after{
-  content:"\02039";
+.calendar .arrow.left:after {
+    content: '\02039';
 }
-.calendar .arrow.right:after{
-  content:"\0203A";
+
+.calendar .arrow.right:after {
+    content: '\0203A';
 }
 
 /* Animations */
 
-.anim-slide-left-in{
-  animation: kfSlideLeftIn var(--transitionTime) linear ;
+.anim-slide-left-in {
+    animation: kfSlideLeftIn var(--transitionTime) linear;
 }
 
-.anim-slide-left-out{
-  animation: kfSlideLeftOut var(--transitionTime) linear ;
+.anim-slide-left-out {
+    animation: kfSlideLeftOut var(--transitionTime) linear;
 }
 
-.anim-slide-right-in{
-  animation: kfSlideLeftOut var(--transitionTime) linear reverse;
+.anim-slide-right-in {
+    animation: kfSlideLeftOut var(--transitionTime) linear reverse;
 }
 
-.anim-slide-right-out{
-  animation: kfSlideLeftIn var(--transitionTime) linear reverse;
-}
-@keyframes kfSlideLeftIn{
-  0%{
-    opacity:0;
-    transform:translate(100%);
-  }
-  100%{
-    opacity:1;
-    transform:translate(0);
-  }
+.anim-slide-right-out {
+    animation: kfSlideLeftIn var(--transitionTime) linear reverse;
 }
 
-@keyframes kfSlideLeftOut{
-  0%{
-    opacity:1;
-    transform:translate(0);
-  }
-  100%{
-    opacity:0;
-    transform:translate(-100%);
-  }
+@keyframes kfSlideLeftIn {
+    0% {
+        opacity: 0;
+        transform: translate(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
-#input-date{
-  height:10em;
+@keyframes kfSlideLeftOut {
+    0% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-100%);
+    }
+}
+
+#input-date {
+    height: 10em;
 }
 
 /*Google fonts*/
 /* latin-ext */
 @font-face {
-  font-family: 'Margarine';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Margarine'), local('Margarine-Regular'), url(https://fonts.gstatic.com/s/margarine/v8/qkBXXvoE6trLT9Y7YLyu7Z5KoAU.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    font-family: 'Margarine';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Margarine'), local('Margarine-Regular'),
+        url(https://fonts.gstatic.com/s/margarine/v8/qkBXXvoE6trLT9Y7YLyu7Z5KoAU.woff2)
+            format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
-  font-family: 'Margarine';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Margarine'), local('Margarine-Regular'), url(https://fonts.gstatic.com/s/margarine/v8/qkBXXvoE6trLT9Y7YLyu455K.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Margarine';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Margarine'), local('Margarine-Regular'),
+        url(https://fonts.gstatic.com/s/margarine/v8/qkBXXvoE6trLT9Y7YLyu455K.woff2)
+            format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin */
 @font-face {
-  font-family: 'Nova Round';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Nova Round'), local('NovaRound'), url(https://fonts.gstatic.com/s/novaround/v11/flU9Rqquw5UhEnlwTJYTUYDUeA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Nova Round';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Nova Round'), local('NovaRound'),
+        url(https://fonts.gstatic.com/s/novaround/v11/flU9Rqquw5UhEnlwTJYTUYDUeA.woff2)
+            format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
 }
 
-
-
-.ra
-{align-content:right;
-position:absolute;
-left:50%;
-top:35%;
-margin-left:100px;
+.ra {
+    align-content: right;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    margin-left: 100px;
 }
+
 .R {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
-
 
 .butt {
-  background-color: #250033;
-  width: 400px;
-  height: 70px;
-  color: white;
-  border: 2px solid #250033;
+    background-color: #250033;
+    width: 400px;
+    height: 70px;
+    color: white;
+    border: 2px solid #250033;
 }
 
 .butt:hover {
-  background-color: white;
-  color: #602060;
+    background-color: white;
+    color: #602060;
 }
+
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-  text-align: right;
-  color:#250033;
-  
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+    text-align: right;
+    color: #250033;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 10% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border:1px solid #250033;
-  width: 35%; /* Could be more or less, depending on screen size */
-  height: 50%;
-   box-shadow: 7px 7px 5px #250033;
-font-size:20px;
-
+    background-color: #fefefe;
+    margin: 10% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #250033;
+    width: 35%;
+    /* Could be more or less, depending on screen size */
+    height: 50%;
+    box-shadow: 7px 7px 5px #250033;
+    font-size: 20px;
 }
 
 /* The Close Button (x) */
 .close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #250033;
-  font-size: 35px;
-  font-weight: bold;
- 
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #250033;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: red;
-  cursor: pointer;
+    color: red;
+    cursor: pointer;
 }
 
 /* Add Zoom Animation */
 .animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
 }
 
 @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
+    from {
+        -webkit-transform: scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+    }
 }
-  
+
 @keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
 }
 
-</style>
+    </style>
 <body>
 <div style= "background-color :#250033;height:117px">
  <img src = "11.png" width="100"  align="right" style="margin-top: 20px; margin-right: 20px;" />

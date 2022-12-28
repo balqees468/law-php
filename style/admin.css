@@ -1,5 +1,3 @@
-<html>
-<style>
 .topnav {
 
     background-color: #ffffb3;
@@ -46,7 +44,6 @@ img {
 
 
 
-
 .active {
     background-color: #717171;
 }
@@ -76,7 +73,8 @@ img {
 
 .topnav {
 
-    background-color: #ffffb3;/gold/ width: 150px;
+    background-color: #ffffb3;
+    width: 150px;
     height: 30px;
     padding: 15px;
     box-shadow: 10px 10px 5px #ffffcc;
@@ -129,7 +127,6 @@ img {
     margin: auto;
     text-align: center;
 }
-
 
 
 .dropdown {
@@ -270,47 +267,3 @@ img {
     background-color: white;
     color: #602060;
 }
-</style>
-
-<head>
-    <link href="" rel="stylesheet"> <!--  -->
-</head>
-
-<body>
-    <div style="background-color :#250033;height:117px">
-        <img src="11.png" width="100" align="right" style="margin-top: 20px; margin-right: 20px;" />
-        <p
-            style=" color:#F0E169;font-family:DecoType Naskh Variants; font-size:45; margin-left:1125px;margin-top:6px;margin-bottom:4px">
-            المحكمة الشرعية</p>
-    </div>
-    <div class="topnav">
-
-        <div class="dropdown">
-            <img src="113.png" alt="Cinque Terre" width="65" height="60">
-            <div class="dropdown-content">
-                <br>
-                <center><a href="logout.php" alt="Cinque Terre"
-                        style="width: auto; margin-butom:0px; magin-top:0px;color:#250033; font-size:14">تسجيل
-                        الخروج</a></center>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="ra">
-        <fieldset>
-            <br>
-            <a href="newuser.php"><button class=" R butt"><img src="223.png"
-                        style="float:left;align:center margin-right:0.5em margin-top:10px width=" 70" height="35">اضافة
-                    حساب جديد</button></a><br>
-            <button class=" R butt"><img src="033.png" style="float:left;align:center margin-right:0.5em width=" 70"
-                    height="35">تغيير كلمة مرور</button><br>
-            <button class=" R butt"><img src="001.png"
-                    style="float:left;align:center margin-right:0.5em margin-bottom:10em width=" 70" height="35">حذف
-                حساب</button><br>
-
-    </div>
-    </fieldset>
-</body>
-
-</html>

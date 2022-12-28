@@ -37,7 +37,7 @@ VALUES (:username2, 'login')");
                         'username2'     =>     $_POST["username"]
                     ));
                     $_SESSION["id"] = $user['id'];
-                    $_SESSION["name"] = $user['firstname'] + " " + $user['lastname'];
+                    $_SESSION["name"] = $user['firstname'];
                     $_SESSION["type"] = $user['type'];
 
                     if ($user["type"] == "writter") {

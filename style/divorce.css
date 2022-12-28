@@ -1,0 +1,100 @@
+.topnav {
+  
+    background-color: #ffffb3; 
+     width: 150px;
+    height: 30px;
+    padding: 15px;
+   box-shadow: 10px 10px 5px #ffffcc;
+  
+  }
+  
+  .topnav  a {
+    display: block;
+    float: right;
+    color: #250033; /*نهدي*/
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size:18px;
+  }
+  .topnav  a:hover:not(.active) {background-color: white;}
+  .mySlides {display: none; margin-right:200px; margin-top:15px}
+  img {vertical-align: middle;}
+  
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    text-align:center;
+  }
+  
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  /* Fixed sidenav, full height الشريط الجنب */
+  .sidenav {
+    list-style-type: none;
+    height: 80%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top:185;
+    right:8;
+    background-color: #ffffb3;
+    overflow-x: hidden;
+    padding-top: 20px
+    
+  
+  }
+  /* Style the sidenav links */
+  .sidenav a  {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #250033;
+    display: block;
+    border: none;
+    background: none;
+    width: 90%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    
+    
+  }
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    background-color: white; /*grey*/
+  }
+  .main {
+    font-family: Verdana, sans-serif;
+    text-align: right;
+    margin-right: 300px;
+    
+    }
+  

@@ -30,8 +30,6 @@ img {vertical-align: middle;}
 }
 
 
-}
-
 .topnav  a:hover:not(.active) {background-color: white;}
 .mySlides {display: none; margin-right:200px; margin-top: 10px}
 img {vertical-align: middle;}
@@ -521,10 +519,7 @@ button[disabled] {
   white-space: nowrap;
   width: 1px;
 }
-
-
 </style>
-
 <body>
 <div style= "background-color :#250033;height">
  <img src = "11.png" width="100"  align="right" style="margin-top: 20px; margin-right: 20px;" />
